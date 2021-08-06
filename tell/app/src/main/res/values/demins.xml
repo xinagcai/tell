@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="text_first">17sp</dimen>
+    <dimen name="text_two">22sp</dimen>
+    <dimen name="text_three">27sp</dimen>
+    <dimen name="text_four">37sp</dimen>
 </resources>

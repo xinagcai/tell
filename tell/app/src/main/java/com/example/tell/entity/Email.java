@@ -1,27 +1,37 @@
 package com.example.tell.entity;
 
+import android.widget.TextView;
+
+import java.io.Serializable;
 import java.sql.Time;
 
-public class Email {
-    private User fro;
-    private User sendto;
+public class Email implements Serializable {
+    private int id;
+    private String fro;
+    private String sendto;
     private String detail;
-    private Email next;
-    private Email pre;
 
-    public User getFro() {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFro() {
         return fro;
     }
 
-    public void setFro(User fro) {
+    public void setFro(String fro) {
         this.fro = fro;
     }
 
-    public User getSendto() {
+    public String getSendto() {
         return sendto;
     }
 
-    public void setSendto(User sendto) {
+    public void setSendto(String sendto) {
         this.sendto = sendto;
     }
 
@@ -32,22 +42,5 @@ public class Email {
     public void setDetail(String detail) {
         this.detail = detail;
     }
-
-    public Email getNext() {
-        return next;
-    }
-
-    public void setNext(Email next) {
-        this.next = next;
-    }
-
-    public Email getPre() {
-        return pre;
-    }
-
-    public void setPre(Email pre) {
-        this.pre = pre;
-    }
-
 }
 

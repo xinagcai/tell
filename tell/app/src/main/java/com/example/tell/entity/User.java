@@ -1,11 +1,20 @@
 package com.example.tell.entity;
 public class User {
+    private int id;
     private Integer avatar;
     private String name;
     private String account;
     private String pwd;
     private String birth;
     private String sex;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public Integer getAvatar() {
         return avatar;
